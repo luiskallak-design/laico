@@ -1,4 +1,5 @@
 # 🏛️ Projeto Archia (laico-boot) - Guia de Configuração e Dependências
+[![License: MIT](https://shields.io)](https://opensource.org)
 
 ## 📸 Demonstração Visual do Ecossistema
 
