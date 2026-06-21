@@ -1,7 +1,5 @@
 # 🏛️ Projeto Archia (laico-boot) - Guia de Configuração e Dependências
 
-## 📸 Demonstração Visual do Ecossistema
-
 ### Interface Principal e Temas
 ![Tema Principal](assets/laico-boottema.png)
 ![Variação de Tema 1](assets/laico-boottema1.png)
