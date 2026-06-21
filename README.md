@@ -1,5 +1,20 @@
 # 🏛️ Projeto Archia (laico-boot) - Guia de Configuração e Dependências
 
+## 📸 Demonstração Visual do Ecossistema
+
+### Interface Principal e Temas
+![Tema Principal](assets/laico-boottema.png)
+![Variação de Tema 1](assets/laico-boottema1.png)
+![Variação de Tema 2](assets/laico-boottema2.png)
+
+### Integração com os Vetores Operacionais
+![Navegação e Editor Nano](assets/laico-bootnano.png)
+![Gerenciador de Arquivos Thunar](assets/laico-bootthunar.png)
+![Player de Mídia Integrado](assets/laico-bootplayer.png)
+![Navegador Web Integrado](assets/laico-bootweb.png)
+
+---
+
 Este documento centraliza todas as dependências de sistema, ferramentas de terminal (TUIs) e os passos necessários para compilar e implantar o launcher atualizado.
 
 ---
@@ -15,9 +30,9 @@ sudo pacman -S --needed base-devel rustup fastfetch yazi nano feh xcompmgr
 ```
 
 ### Detalhes das Ferramentas Escolhidas:
+* **`nano` (Atalho F1):** Editor de texto simples para modificações rápidas direto no terminal.
 * **`fastfetch` (Atalho F2):** Exibe informações de hardware e software do Arch Linux com o logo em arte ASCII.
 * **`yazi` (Atalho F3):** Gerenciador de arquivos assíncrono moderno e ultraveloz escrito em Rust.
-* **`nano` (Atalho F1):** Editor de texto simples para modificações rápidas direto no terminal.
 * **`feh` / `xcompmgr`:** Utilizados pelo módulo "Cadinho de Hefesto" (F5) para gerenciar papéis de parede e transparências no servidor gráfico.
 
 ---
@@ -65,7 +80,6 @@ cargo build --release
 cp target/release/archia ~/.cargo/bin/laico-boot
 ```
 
-
 ### Passo 3: Forçar a reinicialização da interface
 ```bash
 killall laico-boot
@@ -78,9 +92,10 @@ laico-boot
 
 O painel central de orquestração agora responde ao seguinte espectro de comandos:
 
-* [**F1**] **Nano:** Abre o editor de texto suspendendo o menu de forma limpa.
-* [**F2**] **Fastfetch:** Renderiza os dados do sistema e segura a tela até um Enter ser pressionado.
+* [**H**] **Home:** Retorna para a tela ou visão principal do painel central.
+* [**F1**] **Nano:** Abre o editor de texto Nano suspendendo o menu de forma limpa.
+* [**F2**] **Fastfetch:** Renderiza os dados do sistema e segura a tela até um Enter ser preocupado.
 * [**F3**] **Yazi:** Executa o navegador de arquivos em terminal de alta performance.
-* [**F4**] **Mudar Espectro:** Alterna ciclicamente entre as paletas de cores ANSI (Verde, Amarelo, Vermelho, Laranja).
-* [**F5**] **Cadinho:** Inicializa o gerenciador universal de wallpapers (detecta Wayland/X11 automaticamente).
-* [**F10**] **Terminate System:** Encerra a execução do launcher e restaura o terminal original.
+* [**F4**] **Espectro:** Inicializa ou alterna o visualizador/módulo Espectro do sistema.
+* [**F5**] **Wallpaper:** Inicializa o gerenciador universal de wallpapers (detecta Wayland/X11 automaticamente).
+* [**F10**] **TERMINATE:** Encerra imediatamente a execução do launcher e restaura o terminal original.
